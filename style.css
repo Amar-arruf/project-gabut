@@ -222,9 +222,14 @@ ul li a {
 }
 
 #work .grid-container {
-  padding: 0 100px;
   display: grid;
-  grid-template-columns:auto auto;
+  grid-template-columns:repeat(
+    auto-fit,
+    minmax(
+      min(100%, 350px), /* min value */
+      1fr /* max value */
+    )
+  );
   gap: 57px 30px;
 }
 
@@ -343,11 +348,6 @@ ul li a {
   min-width: 300px;
   font-size: 15px;
   margin-top: 20px;
-}
-
-#work .grid-container {
-  grid-template-columns:auto ;
-  padding: 0;
 }
 
 
