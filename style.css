@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  box-sizing: border-box;
+}
+
 .container {
   width: 80%;
   margin: auto;
